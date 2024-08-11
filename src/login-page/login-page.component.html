@@ -1,18 +1,18 @@
-<div style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-<div class="main" style="display: flex;">
-    <div class="leftdiv" style="flex: 1;">
+<div style="height: 100vh; display: flex; justify-content: center; align-items: center; background-color: gray;">
+<div class="main" style="display: flex; border-radius:10px; background-color: white; width: 75%;">
+    <div class="leftdiv" style="flex: 1; padding: 60px 0; display: flex; justify-content: center; position: relative;">
         <form class="example-form">
-            <h2>dotwork</h2>
-            <h1>Log in to your Account</h1>
-            <h4>Welcome back! Select method to log in:</h4>
-            <div>
-                <button>Google</button>
-                <button>Facebook</button>
+            <h2 style="color: #1a1ab5;">dotwork</h2>
+            <h1 style="font-size: 26px;">Log in to your Account</h1>
+            <h4 style="font-weight: 400; font-size: 14px; margin-top: -10px;">Welcome back! Select method to log in:</h4>
+            <div style="width: 100%; display: flex; gap: 10px; margin-bottom: 30px;">
+                <button style="flex: 1; background-color: white; border: 1px solid gray; height: 40px; border-radius: 5px; font-size: 14px; font-weight: 700;"><fa-icon [icon]="faGoogle" style="margin-right: 9px; font-size: 18px;"></fa-icon> Google</button>
+                <button style="flex: 1; background-color: white; border: 1px solid gray; height: 40px; border-radius: 5px; font-size: 14px; font-weight: 700;"><fa-icon [icon]="faFacebook" style="margin-right: 9px; font-size: 18px;"></fa-icon> Facebook</button>
             </div>
             <hr>
-            <p>or continue with email</p>
-            <mat-form-field class="example-full-width">
-                <mat-label>Email</mat-label>
+            <p style="position: absolute; top: 250px; left: 225px; background-color: white; font-size: 14px; color: gray;">or continue with email</p>
+            <mat-form-field class="example-full-width" style="margin-top: 20px;">
+                <mat-label><fa-icon [icon]="faEnvelope" style="margin-right: 9px;"></fa-icon> Email</mat-label>
                 <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
                     placeholder="Ex. pat@example.com">
                 <mat-hint>Errors appear instantly!</mat-hint>
@@ -25,7 +25,7 @@
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-                <mat-label>Password</mat-label>
+                <mat-label><fa-icon [icon]="faLock" style="margin-right: 9px;"></fa-icon> Password</mat-label>
                 <input type="password" matInput [formControl]="passwordFormControl" [errorStateMatcher]="matcher"
                     placeholder="Enter your password">
                 <mat-hint>Errors appear instantly!</mat-hint>
@@ -37,23 +37,23 @@
                 }
             </mat-form-field>
 
-            <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; ">
                 <mat-checkbox class="example-margin">Remember me</mat-checkbox>
-                <a href="#">Forget Password?</a>
+                <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500;">Forget Password?</a>
             </div>
 
-            <button type="submit">Log in</button>
+            <button type="submit" style="width: 100%; margin-top: 10px; background-color: #1a1ab5; height: 35px; color: white; border: none; border-radius: 10px; font-weight: 500;">Log in</button>
 
-            <p>Don't have an account? <a href="#">Create an account</a></p>
+            <p>Don't have an account? <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 500;">Create an account</a></p>
             
         </form>
     </div>
 
-    <div class="rightdiv" style="flex: 1; background-color: aqua;">
-        <form action="#">
-            <label for="">id</label>
-        </form>
+    <div class="rightdiv" style="flex: 1; background-color: #1a1ab5; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 50%; padding-top: 50%; border-radius: 50%; background-color: #7777c961;">
+        </div>
     </div>
+    
 
 </div>
 </div>
